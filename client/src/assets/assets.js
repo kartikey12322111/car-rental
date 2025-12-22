@@ -41,6 +41,8 @@ import car_image2 from "./car_image2.png"
 import car_image3 from "./car_image3.png"
 import car_image4 from "./car_image4.png"
 
+export const url = "https://car-rental-server-tbrh.onrender.com"
+
 export const cityList = ['Rewari', 'Gurugram', 'Dharuhera', 'Narnaul', 'Delhi', 'Mahendergarh']
 
 export const assets = {
@@ -103,8 +105,8 @@ export const ownerMenuLinks = [
 
 export const dummyUserData = {
   "_id": "6847f7cab3d8daecdb517095",
-  "name": "GreatStack",
-  "email": "admin@example.com",
+  "name": "kartikey",
+  "email": "kartikeyrao43@gmail.com",
   "role": "owner",
   "image": user_profile,
 }
