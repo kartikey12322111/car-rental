@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Navbar from './components/Navbar'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
@@ -17,31 +17,38 @@ import { useAppContext } from './context/AppContext'
 
 const App = () => {
 
-  const {showLogin} = useAppContext()
+  const { showLogin } = useAppContext()
   const isOwnerPath = useLocation().pathname.startsWith('/owner')
 
   return (
     <>
-     <Toaster />
-      {showLogin && <Login/>}
+      {/* ✅ Toast container must stay ALWAYS mounted */}
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 3000,
+        }}
+      />
 
-      {!isOwnerPath && <Navbar/>}
+      {/* ✅ Login modal */}
+      {showLogin && <Login />}
 
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/car-details/:id' element={<CarDetails/>}/>
-      <Route path='/cars' element={<Cars/>}/>
-      <Route path='/my-bookings' element={<MyBookings/>}/>
-      <Route path='/owner' element={<Layout />}>
-        <Route index element={<Dashboard />}/>
-        <Route path="add-car" element={<AddCar />}/>
-        <Route path="manage-cars" element={<ManageCars />}/>
-        <Route path="manage-bookings" element={<ManageBookings />}/>
-      </Route>
-    </Routes>
+      {!isOwnerPath && <Navbar />}
 
-    {!isOwnerPath && <Footer />}
-    
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/car-details/:id' element={<CarDetails />} />
+        <Route path='/cars' element={<Cars />} />
+        <Route path='/my-bookings' element={<MyBookings />} />
+        <Route path='/owner' element={<Layout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="add-car" element={<AddCar />} />
+          <Route path="manage-cars" element={<ManageCars />} />
+          <Route path="manage-bookings" element={<ManageBookings />} />
+        </Route>
+      </Routes>
+
+      {!isOwnerPath && <Footer />}
     </>
   )
 }
