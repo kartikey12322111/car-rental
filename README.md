@@ -1,48 +1,37 @@
-🚗 Car Rental Web Application
+# 🚗 Car Rental Web Application
 
-A full-stack Car Rental Web Application built using React, Node.js, Express, and MongoDB.
-The platform allows users to browse available cars, make bookings, and manage rentals through a modern web interface.
+A full-stack **Car Rental Web Application** built using **React.js, Node.js, Express.js, and MongoDB**.  
+This application allows users to browse cars, check availability, and book cars through a modern and responsive interface.
 
-🛠️ Tech Stack
+---
 
-Frontend
+## 🛠 Tech Stack
 
-React.js
+**Frontend**
+- React.js
+- HTML5
+- CSS3
+- JavaScript
 
-HTML5
+**Backend**
+- Node.js
+- Express.js
 
-CSS3
+**Database**
+- MongoDB
 
-JavaScript
+---
 
-Backend
+## ✨ Features
 
-Node.js
+- Browse available cars
+- View car details (model, price, availability)
+- Book cars online
+- RESTful APIs for car and booking management
+- MongoDB database integration
+- Responsive UI
 
-Express.js
+---
 
-Database
+## 📂 Project Structure
 
-MongoDB
-
-Other Tools
-
-Mongoose
-
-REST APIs
-
-Git & GitHub
-
-✨ Features
-
-User-friendly car browsing interface
-
-View available cars with details (price, model, availability)
-
-Car booking functionality
-
-Backend API for managing cars and rentals
-
-MongoDB database for storing users, cars, and bookings
-
-Responsive design
