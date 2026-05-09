@@ -30,6 +30,7 @@ This application allows users to browse cars, check availability, and book cars 
 - RESTful APIs for car and booking management
 - MongoDB database integration
 - Responsive UI
+- Advanced backend features
 
 ---
 
