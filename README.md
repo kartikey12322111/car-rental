@@ -5,7 +5,7 @@ It also includes secure user authentication, booking management, and an admin da
 
 ----
 
-## 🛠 Tech Stack
+## 🛠 Tech Stack USED
 
 **Frontend**
 - React.js
