@@ -30,7 +30,6 @@ It also includes secure user authentication, booking management, and an admin da
 - RESTful APIs for car and booking management
 - MongoDB database integration
 - Responsive UI
-- Advanced backend features
 
 ---
 
